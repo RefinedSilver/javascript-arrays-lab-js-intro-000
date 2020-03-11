@@ -18,9 +18,7 @@ function destructivelyRemoveLastKitten() {
 }
 
 function appendKitten(name) {
-  let newArray = [...kittens];
-  newArray.push(name);
-  return newArray;
+  return [...kittens, name]
 }
 
 function prependKitten(name) {
