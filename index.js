@@ -22,9 +22,7 @@ function appendKitten(name) {
 }
 
 function prependKitten(name) {
-  let newArray = [...kittens];
-  newArray.unshift(name);
-  return newArray;
+  return [name,...kittens];
 }
 
 function removeFirstKitten() {
